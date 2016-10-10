@@ -22,7 +22,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ko6-te-YpS" customClass="MainView" customModule="Puzzle" customModuleProvider="target">
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1i-mZ-MTq" userLabel="White" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view clipsSubviews="YES" tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1i-mZ-MTq" userLabel="White" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="PCL-sk-dRP"/>
@@ -37,7 +37,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leq-VL-mq7" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leq-VL-mq7" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="7Ol-O2-g6V"/>
@@ -52,7 +52,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPQ-n1-ejh" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1008" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPQ-n1-ejh" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="duZ-xG-JeA"/>
@@ -67,7 +67,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-4k-COF" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1012" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-4k-COF" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="3O6-jE-F14"/>
@@ -82,7 +82,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfU-sN-aQj" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfU-sN-aQj" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="NAS-eZ-Ql6"/>
@@ -97,7 +97,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afl-h5-et0" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afl-h5-et0" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="LRQ-lV-brg"/>
@@ -112,7 +112,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-YI-Daq" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1013" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-YI-Daq" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="R0N-re-xPb"/>
@@ -127,7 +127,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qz-Ez-qF6" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1014" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Qz-Ez-qF6" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="6uk-k7-6mf"/>
@@ -142,7 +142,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3D-VU-A5s" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1015" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3D-VU-A5s" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="dHc-hy-u2q"/>
@@ -157,7 +157,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-UJ-jqs" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1009" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmX-UJ-jqs" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="afW-9Z-jxD"/>
@@ -172,7 +172,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnk-e6-cZ0" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1010" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnk-e6-cZ0" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="33q-DB-clF"/>
@@ -187,7 +187,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBs-pq-Dgk" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1011" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBs-pq-Dgk" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="I1u-TV-rHy"/>
@@ -202,7 +202,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJq-sE-8pg" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1005" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJq-sE-8pg" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="9NX-lp-jAE"/>
@@ -217,7 +217,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sph-lD-QKp" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1006" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sph-lD-QKp" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="BVa-Z8-zAV"/>
@@ -232,7 +232,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZK-YD-fmL" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1007" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZK-YD-fmL" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="mEx-An-eb1"/>
@@ -247,7 +247,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2l-gB-Q7Z" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
+                                    <view tag="1001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2l-gB-Q7Z" customClass="SquareView" customModule="Puzzle" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="vBM-F3-nMB"/>
