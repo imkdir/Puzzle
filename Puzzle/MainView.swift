@@ -8,9 +8,9 @@
 
 import UIKit
 
+let mainSize = 4 * squareSize + 16
+
 class MainView: UIView {
-    
-    var blankView:SquareView!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
@@ -24,4 +24,5 @@ class MainView: UIView {
         self.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.clipsToBounds = true
     }
+
 }

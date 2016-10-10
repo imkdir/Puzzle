@@ -303,15 +303,27 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fl-bx-Ba9">
                                 <state key="normal" title="L"/>
+                                <connections>
+                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yGF-tl-GcC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3X2-Vq-PaB">
                                 <state key="normal" title="R"/>
+                                <connections>
+                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pr6-ve-vfL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIE-E9-COD">
                                 <state key="normal" title="U"/>
+                                <connections>
+                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IkK-JV-YGe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyP-E0-Ix2">
                                 <state key="normal" title="D"/>
+                                <connections>
+                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q8H-UD-bjB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -322,7 +334,7 @@
                             <constraint firstItem="3X2-Vq-PaB" firstAttribute="leading" secondItem="4fl-bx-Ba9" secondAttribute="trailing" constant="8" id="Qx8-qc-u7p"/>
                             <constraint firstItem="aIE-E9-COD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="UnZ-fy-ecl"/>
                             <constraint firstItem="3X2-Vq-PaB" firstAttribute="top" secondItem="4fl-bx-Ba9" secondAttribute="top" id="YTL-le-pz8"/>
-                            <constraint firstItem="Ko6-te-YpS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="bpi-FZ-Dzp"/>
+                            <constraint firstItem="Ko6-te-YpS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bpi-FZ-Dzp"/>
                             <constraint firstItem="aIE-E9-COD" firstAttribute="top" secondItem="4fl-bx-Ba9" secondAttribute="top" id="o1d-Ng-PHu"/>
                             <constraint firstItem="3X2-Vq-PaB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4" id="pgh-6l-fzT"/>
                             <constraint firstItem="3X2-Vq-PaB" firstAttribute="top" secondItem="Ko6-te-YpS" secondAttribute="bottom" constant="40" id="qVw-vy-iUH"/>

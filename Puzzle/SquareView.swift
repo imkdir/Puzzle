@@ -8,6 +8,8 @@
 
 import UIKit
 
+let squareSize:CGFloat = 60.0
+
 @IBDesignable
 class SquareView: UIView {
     
