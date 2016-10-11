@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60BCEA61DAD11E700B318AB /* SquareView+Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BCEA51DAD11E600B318AB /* SquareView+Flip.swift */; };
 		A640D2511DAB839D006D17B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2501DAB839D006D17B6 /* AppDelegate.swift */; };
 		A640D2531DAB839D006D17B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2521DAB839D006D17B6 /* ViewController.swift */; };
 		A640D2561DAB839E006D17B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A640D2541DAB839E006D17B6 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A60BCEA51DAD11E600B318AB /* SquareView+Flip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SquareView+Flip.swift"; sourceTree = "<group>"; };
 		A640D24D1DAB839D006D17B6 /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A640D2501DAB839D006D17B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A640D2521DAB839D006D17B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				A640D2621DAB8485006D17B6 /* MainView.swift */,
 				A640D2641DAB99F0006D17B6 /* SquareView.swift */,
 				A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */,
+				A60BCEA51DAD11E600B318AB /* SquareView+Flip.swift */,
 			);
 			path = Puzzle;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				A640D2531DAB839D006D17B6 /* ViewController.swift in Sources */,
 				A640D2631DAB8485006D17B6 /* MainView.swift in Sources */,
+				A60BCEA61DAD11E700B318AB /* SquareView+Flip.swift in Sources */,
 				A640D2511DAB839D006D17B6 /* AppDelegate.swift in Sources */,
 				A640D2671DAC7FB7006D17B6 /* SquareView+LRUD.swift in Sources */,
 				A640D2651DAB99F0006D17B6 /* SquareView.swift in Sources */,

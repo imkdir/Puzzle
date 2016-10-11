@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let duration:TimeInterval = 0.5
+    
     @IBOutlet weak var mainView: MainView!
     @IBOutlet weak var whiteView: SquareView!
     @IBOutlet var buttons: [UIButton]!
@@ -19,11 +21,15 @@ class ViewController: UIViewController {
                 let direction = SquareView.Direction(rawValue:title) else {
             return
         }
-        self.whiteView.LRUD_animate(toward: direction, withDuration: 1.0, options: [])
-        UIView.animate(withDuration: 0.4, animations: {
+        self.whiteView.LRUD_animate(toward: direction, withDuration: duration, options: [])
+        self.disableButtonsForOneSecond()
+    }
+    
+    private func disableButtonsForOneSecond() {
+        UIView.animate(withDuration: duration/2.0, animations: {
             for button in self.buttons { button.alpha = 0.8 }
             }, completion: { finished in
-                UIView.animate(withDuration: 0.5, animations: {
+                UIView.animate(withDuration: self.duration/2.0, animations: {
                     for button in self.buttons { button.alpha = 1.0 }
                 })
         })
