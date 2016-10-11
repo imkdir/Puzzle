@@ -14,6 +14,7 @@
 		A640D25B1DAB839E006D17B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A640D2591DAB839E006D17B6 /* LaunchScreen.storyboard */; };
 		A640D2631DAB8485006D17B6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2621DAB8485006D17B6 /* MainView.swift */; };
 		A640D2651DAB99F0006D17B6 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2641DAB99F0006D17B6 /* SquareView.swift */; };
+		A640D2671DAC7FB7006D17B6 /* SquareView+LRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A640D25C1DAB839E006D17B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A640D2621DAB8485006D17B6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A640D2641DAB99F0006D17B6 /* SquareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SquareView+LRUD.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A640D25C1DAB839E006D17B6 /* Info.plist */,
 				A640D2621DAB8485006D17B6 /* MainView.swift */,
 				A640D2641DAB99F0006D17B6 /* SquareView.swift */,
+				A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */,
 			);
 			path = Puzzle;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				A640D2531DAB839D006D17B6 /* ViewController.swift in Sources */,
 				A640D2631DAB8485006D17B6 /* MainView.swift in Sources */,
 				A640D2511DAB839D006D17B6 /* AppDelegate.swift in Sources */,
+				A640D2671DAC7FB7006D17B6 /* SquareView+LRUD.swift in Sources */,
 				A640D2651DAB99F0006D17B6 /* SquareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +312,7 @@
 				A640D2611DAB839E006D17B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
