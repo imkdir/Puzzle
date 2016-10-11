@@ -1,5 +1,6 @@
 #PuzzleGame
-###Dive in Swift 3.0 and Xcode 8.0
+##Dive in Swift 3.0 and Xcode 8.0
+![appIcon](./img/appIcon.png)
 
 ####10 Oct. 2016
 
