@@ -16,6 +16,7 @@
 		A640D2631DAB8485006D17B6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2621DAB8485006D17B6 /* MainView.swift */; };
 		A640D2651DAB99F0006D17B6 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2641DAB99F0006D17B6 /* SquareView.swift */; };
 		A640D2671DAC7FB7006D17B6 /* SquareView+LRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */; };
+		A6AD6A4D1DAD2FBA009454A8 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD6A4C1DAD2FBA009454A8 /* UIColor+Palette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A640D2621DAB8485006D17B6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A640D2641DAB99F0006D17B6 /* SquareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SquareView+LRUD.swift"; sourceTree = "<group>"; };
+		A6AD6A4C1DAD2FBA009454A8 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		A640D24F1DAB839D006D17B6 /* Puzzle */ = {
 			isa = PBXGroup;
 			children = (
+				A6AD6A4C1DAD2FBA009454A8 /* UIColor+Palette.swift */,
 				A640D2501DAB839D006D17B6 /* AppDelegate.swift */,
 				A640D2521DAB839D006D17B6 /* ViewController.swift */,
 				A640D2541DAB839E006D17B6 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AD6A4D1DAD2FBA009454A8 /* UIColor+Palette.swift in Sources */,
 				A640D2531DAB839D006D17B6 /* ViewController.swift in Sources */,
 				A640D2631DAB8485006D17B6 /* MainView.swift in Sources */,
 				A60BCEA61DAD11E700B318AB /* SquareView+Flip.swift in Sources */,

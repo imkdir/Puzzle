@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         self.disableButtonsForOneSecond()
     }
     
+    @IBAction func refreshGame(_ sender: UIBarButtonItem) {
+        UIView.animate(withDuration: duration, animations: {
+            self.refreshMainView()
+            }, completion: nil)
+    }
+    
     private func disableButtonsForOneSecond() {
         UIView.animate(withDuration: duration/2.0, animations: {
             for button in self.buttons { button.alpha = 0.8 }
@@ -34,4 +40,29 @@ class ViewController: UIViewController {
                 })
         })
     }
+    
+    private func refreshMainView() {
+        
+        func relocateWhiteViewTo(_ subView: UIView) {
+            subView.backgroundColor = .white
+            subView.layer.borderColor = UIColor.flatGray().cgColor
+            subView.layer.borderWidth += 1.0
+            self.whiteView = subView as! SquareView
+        }
+        
+        let redSquareIndexs = [1, 4, 5, 8, 9, 12, 13]
+        for subView in self.mainView.subviews {
+            let index = subView.tag - 1000
+            subView.layer.borderColor = UIColor.white.cgColor
+            subView.layer.borderWidth = 1.0
+            if index == 0 {
+                relocateWhiteViewTo(subView)
+            } else if redSquareIndexs.contains(index) {
+                subView.backgroundColor = UIColor.carminePink()
+            } else {
+                subView.backgroundColor = UIColor.sanMarino()
+            }
+        }
+    }
+    
 }
