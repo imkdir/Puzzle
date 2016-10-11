@@ -52,18 +52,50 @@ class ViewController: UIViewController {
             var point = CGPoint.zero
             switch direction {
             case .Left:
+                let tag = 1000 + 4 * (Int(self.whiteView.center.y)/60) + Int(self.whiteView.center.x)/60 - 1
+                let adjacent = self.mainView.viewWithTag(tag) as! SquareView
+                UIView.animate(withDuration: 1.0, animations: {
+                    adjacent.center.x = self.whiteView.center.x
+                    self.whiteView.center.x -= squareSize
+                    }, completion: { finished in
+                        self.swapTwoInts(&self.whiteView.tag, &adjacent.tag)
+                })
                 point.x = whiteViewCenter.x - squareSize
                 print("whiteView's center.x should be \(point.x)")
                 whiteViewCenter.x = point.x
             case .Right:
+                let tag = 1000 + 4 * (Int(self.whiteView.center.y)/60) + Int(self.whiteView.center.x)/60 + 1
+                let adjacent = self.mainView.viewWithTag(tag) as! SquareView
+                UIView.animate(withDuration: 1.0, animations: {
+                    adjacent.center.x = self.whiteView.center.x
+                    self.whiteView.center.x += squareSize
+                    }, completion: { finished in
+                        self.swapTwoInts(&self.whiteView.tag, &adjacent.tag)
+                })
                 point.x = whiteViewCenter.x + squareSize
                 print("whiteView's center.x should be \(point.x)")
                 whiteViewCenter.x = point.x
             case .Up:
+                let tag = 1000 + 4 * (Int(self.whiteView.center.y)/60 - 1) + Int(self.whiteView.center.x)/60
+                let adjacent = self.mainView.viewWithTag(tag) as! SquareView
+                UIView.animate(withDuration: 1.0, animations: {
+                    adjacent.center.y = self.whiteView.center.y
+                    self.whiteView.center.y -= squareSize
+                    }, completion: { finished in
+                        self.swapTwoInts(&self.whiteView.tag, &adjacent.tag)
+                })
                 point.y = whiteViewCenter.y - squareSize
                 print("whiteView's center.y should be \(point.y)")
                 whiteViewCenter.y = point.y
             case .Down:
+                let tag = 1000 + 4 * (Int(self.whiteView.center.y)/60 + 1) + Int(self.whiteView.center.x)/60
+                let adjacent = self.mainView.viewWithTag(tag) as! SquareView
+                UIView.animate(withDuration: 1.0, animations: {
+                    adjacent.center.y = self.whiteView.center.y
+                    self.whiteView.center.y += squareSize
+                    }, completion: { finished in
+                        self.swapTwoInts(&self.whiteView.tag, &adjacent.tag)
+                })
                 point.y = whiteViewCenter.y + squareSize
                 print("whiteView's center.y should be \(point.y)")
                 whiteViewCenter.y = point.y
@@ -91,6 +123,12 @@ class ViewController: UIViewController {
         case .Down:
             return whiteViewCenter.y < direction.limit()
         }
+    }
+    
+    func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+        let temporaryA = a
+        a = b
+        b = temporaryA
     }
 }
 
