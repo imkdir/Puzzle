@@ -29,7 +29,10 @@ extension SquareView {
     }
     
     func LRUD_animate(toward: Direction, withDuration duration: TimeInterval, options: UIViewAnimationOptions) {
-        if !possibleToMove(toward) { return } // TODO: Here can improve user experience with an nice animation
+        if !possibleToMove(toward) {
+            self.flipAnimation(toward)
+            return
+        }
         
         let adjacent = self.findAdjacentViewAt(toward)
         
