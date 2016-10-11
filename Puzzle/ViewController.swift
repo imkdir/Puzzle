@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mainView: MainView!
     @IBOutlet weak var whiteView: SquareView!
+    @IBOutlet var buttons: [UIButton]!
 
     @IBAction func move(_ sender: UIButton) {
         guard let title = sender.title(for: .normal),
@@ -19,5 +20,12 @@ class ViewController: UIViewController {
             return
         }
         self.whiteView.LRUD_animate(toward: direction, withDuration: 1.0, options: [])
+        UIView.animate(withDuration: 0.4, animations: {
+            for button in self.buttons { button.alpha = 0.8 }
+            }, completion: { finished in
+                UIView.animate(withDuration: 0.5, animations: {
+                    for button in self.buttons { button.alpha = 1.0 }
+                })
+        })
     }
 }
