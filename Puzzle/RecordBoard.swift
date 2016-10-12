@@ -25,8 +25,9 @@ class RecordBoard: UIView {
         didSet {
             setNeedsDisplay()
             let route = paths.reduce("", +)
+            let path = route.isEmpty ? "Here is your path" : route
             UIGraphicsBeginImageContextWithOptions(frame.size, false, 0)
-            route.draw(in: bounds, withAttributes: textAttributes)
+            path.draw(in: bounds, withAttributes: textAttributes)
             let image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             
@@ -61,9 +62,7 @@ class RecordBoard: UIView {
     }
     
     func startGradientAnimation(){
-        guard !paths.isEmpty else {
-            return
-        }; layer.addSublayer(gradientLayer)
+        layer.addSublayer(gradientLayer)
         
         let animation = CABasicAnimation(keyPath: "locations")
         animation.fromValue = [0.0, 0.0, 0.25]
