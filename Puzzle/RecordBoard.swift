@@ -49,7 +49,7 @@ class RecordBoard: UIView {
         let layer = CAGradientLayer()
         layer.startPoint = CGPoint(x: 0.0, y: 0.5)
         layer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        let colors:[UIColor] = [.darkGray, .white, .darkGray]
+        let colors:[UIColor] = [.lightGray, .white, .lightGray]
         layer.colors = colors.map { $0.cgColor }
         layer.locations = [0.25, 0.5, 0.75]
         

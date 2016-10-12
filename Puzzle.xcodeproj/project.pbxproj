@@ -18,6 +18,7 @@
 		A640D2671DAC7FB7006D17B6 /* SquareView+LRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */; };
 		A6AD6A4D1DAD2FBA009454A8 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD6A4C1DAD2FBA009454A8 /* UIColor+Palette.swift */; };
 		A6AD6A4F1DADB8E8009454A8 /* RecordBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD6A4E1DADB8E8009454A8 /* RecordBoard.swift */; };
+		A6D45B1C1DAE061F00A8C53A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D45B1B1DAE061E00A8C53A /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SquareView+LRUD.swift"; sourceTree = "<group>"; };
 		A6AD6A4C1DAD2FBA009454A8 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		A6AD6A4E1DADB8E8009454A8 /* RecordBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordBoard.swift; sourceTree = "<group>"; };
+		A6D45B1B1DAE061E00A8C53A /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */,
 				A60BCEA51DAD11E600B318AB /* SquareView+Flip.swift */,
 				A6AD6A4E1DADB8E8009454A8 /* RecordBoard.swift */,
+				A6D45B1B1DAE061E00A8C53A /* InfoViewController.swift */,
 			);
 			path = Puzzle;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				A640D2531DAB839D006D17B6 /* ViewController.swift in Sources */,
 				A640D2631DAB8485006D17B6 /* MainView.swift in Sources */,
 				A6AD6A4F1DADB8E8009454A8 /* RecordBoard.swift in Sources */,
+				A6D45B1C1DAE061F00A8C53A /* InfoViewController.swift in Sources */,
 				A60BCEA61DAD11E700B318AB /* SquareView+Flip.swift in Sources */,
 				A640D2511DAB839D006D17B6 /* AppDelegate.swift in Sources */,
 				A640D2671DAC7FB7006D17B6 /* SquareView+LRUD.swift in Sources */,

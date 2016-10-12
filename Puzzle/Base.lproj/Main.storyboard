@@ -345,6 +345,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Puzzle" id="GC4-3T-Vi6">
+                        <barButtonItem key="leftBarButtonItem" image="Info" id="v6d-QF-rgk">
+                            <connections>
+                                <action selector="showGoalOfGame:" destination="BYZ-38-t0r" id="lWv-I1-rQm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="4XF-mY-O8y">
                             <connections>
                                 <action selector="refreshGame:" destination="BYZ-38-t0r" id="yfE-eP-OrV"/>
@@ -363,6 +368,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1132.5" y="138.38028169014083"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="vG6-KE-OXd">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="Ei5-bR-1Rl" customClass="InfoViewController" customModule="Puzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V1r-ai-n7O"/>
+                        <viewControllerLayoutGuide type="bottom" id="nxb-mb-ksv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Ow-dF-6hE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Goal" translatesAutoresizingMaskIntoConstraints="NO" id="rdk-lj-NoS">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="E0G-bK-cnj"/>
+                                    <constraint firstAttribute="height" constant="256" id="f3l-l3-bWO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the shortest path to the picture below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW5-JB-eBf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="adB-SY-0If"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rdk-lj-NoS" firstAttribute="centerX" secondItem="5Ow-dF-6hE" secondAttribute="centerX" id="1p7-2W-az9"/>
+                            <constraint firstItem="hW5-JB-eBf" firstAttribute="leading" secondItem="5Ow-dF-6hE" secondAttribute="leading" constant="16" id="Anr-NU-1Pf"/>
+                            <constraint firstItem="rdk-lj-NoS" firstAttribute="top" secondItem="hW5-JB-eBf" secondAttribute="bottom" constant="32" id="LQt-5f-QHE"/>
+                            <constraint firstAttribute="trailing" secondItem="hW5-JB-eBf" secondAttribute="trailing" constant="16" id="OEs-x9-9zQ"/>
+                            <constraint firstItem="rdk-lj-NoS" firstAttribute="centerY" secondItem="5Ow-dF-6hE" secondAttribute="centerY" constant="20" id="eDt-GA-VkJ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Tw-PK-Hlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920" y="137.32394366197184"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uc6-Ua-Qfc">
@@ -383,5 +430,9 @@
             <point key="canvasLocation" x="135" y="138.38028169014083"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Goal" width="265" height="265"/>
+        <image name="Info" width="22" height="22"/>
+    </resources>
     <color key="tintColor" red="0.25005361437797546" green="0.30566063523292542" blue="0.58369332551956177" alpha="1" colorSpace="calibratedRGB"/>
 </document>
