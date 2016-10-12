@@ -10,17 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let duration:TimeInterval = 0.5
+    let recordBoard = RecordBoard(frame: boardFrame)
     
     @IBOutlet weak var mainView: MainView!
     @IBOutlet weak var whiteView: SquareView!
     @IBOutlet var buttons: [UIButton]!
+    
+    //MARK: - View Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
+        self.view.addSubview(recordBoard)
+        
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(_:)))
+        self.view.gestureRecognizers = [pan]
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.pullDownRecordBoardWithCompletion(nil)
+    }
+
+    //MARK: - IBAction
     @IBAction func move(_ sender: UIButton) {
         guard let title = sender.title(for: .normal),
                 let direction = SquareView.Direction(rawValue:title) else {
             return
         }
+        recordBoard.paths.append(title)
         self.whiteView.LRUD_animate(toward: direction, withDuration: duration, options: [])
         self.disableButtonsForOneSecond()
     }
@@ -31,6 +49,21 @@ class ViewController: UIViewController {
             }, completion: nil)
     }
     
+    //MARK: - GestureRecognizers
+    func handlePan(_ gesture: UIPanGestureRecognizer) {
+        switch gesture.state {
+        case .began:
+            gesture.isEnabled = false
+            self.recordBoard.startGradientAnimation()
+            self.pullDownRecordBoardWithCompletion({ finished in
+                gesture.isEnabled = true
+            })
+        default:
+            break
+        }
+    }
+    
+    //MARK: - Helper Methods
     private func disableButtonsForOneSecond() {
         UIView.animate(withDuration: duration/2.0, animations: {
             for button in self.buttons { button.alpha = 0.8 }
@@ -63,6 +96,22 @@ class ViewController: UIViewController {
                 subView.backgroundColor = UIColor.sanMarino()
             }
         }
+        
+        recordBoard.paths.removeAll()
     }
     
+    private func pullDownRecordBoardWithCompletion(_ completion: ((Bool) -> Void)?) {
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: [.curveEaseOut], animations: {
+            self.recordBoard.center.y += 64.0
+            }, completion: { finished in
+                UIView.animate(withDuration: 0.2, delay: 1.5, options: [.curveEaseIn], animations: {
+                    self.recordBoard.center.y -= 64.0
+                    }, completion: { finished in
+                        completion?(finished)
+                })
+        })
+    }
+    
+    let duration:TimeInterval = 0.5
+    static let boardFrame = CGRect(x:0.0, y:0.0, width:UIScreen.main.bounds.size.width, height:68.0)
 }
