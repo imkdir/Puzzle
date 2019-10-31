@@ -7,22 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A60BCEA61DAD11E700B318AB /* SquareView+Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60BCEA51DAD11E600B318AB /* SquareView+Flip.swift */; };
 		A640D2511DAB839D006D17B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2501DAB839D006D17B6 /* AppDelegate.swift */; };
 		A640D2531DAB839D006D17B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2521DAB839D006D17B6 /* ViewController.swift */; };
 		A640D2561DAB839E006D17B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A640D2541DAB839E006D17B6 /* Main.storyboard */; };
 		A640D2581DAB839E006D17B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A640D2571DAB839E006D17B6 /* Assets.xcassets */; };
 		A640D25B1DAB839E006D17B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A640D2591DAB839E006D17B6 /* LaunchScreen.storyboard */; };
-		A640D2631DAB8485006D17B6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2621DAB8485006D17B6 /* MainView.swift */; };
-		A640D2651DAB99F0006D17B6 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2641DAB99F0006D17B6 /* SquareView.swift */; };
-		A640D2671DAC7FB7006D17B6 /* SquareView+LRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */; };
-		A6AD6A4D1DAD2FBA009454A8 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD6A4C1DAD2FBA009454A8 /* UIColor+Palette.swift */; };
-		A6AD6A4F1DADB8E8009454A8 /* RecordBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD6A4E1DADB8E8009454A8 /* RecordBoard.swift */; };
-		A6D45B1C1DAE061F00A8C53A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D45B1B1DAE061E00A8C53A /* InfoViewController.swift */; };
+		A640D2631DAB8485006D17B6 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2621DAB8485006D17B6 /* BoardView.swift */; };
+		A640D2651DAB99F0006D17B6 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640D2641DAB99F0006D17B6 /* BlockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A60BCEA51DAD11E600B318AB /* SquareView+Flip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SquareView+Flip.swift"; sourceTree = "<group>"; };
 		A640D24D1DAB839D006D17B6 /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A640D2501DAB839D006D17B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A640D2521DAB839D006D17B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,12 +24,9 @@
 		A640D2571DAB839E006D17B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A640D25A1DAB839E006D17B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A640D25C1DAB839E006D17B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A640D2621DAB8485006D17B6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		A640D2641DAB99F0006D17B6 /* SquareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
-		A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SquareView+LRUD.swift"; sourceTree = "<group>"; };
-		A6AD6A4C1DAD2FBA009454A8 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
-		A6AD6A4E1DADB8E8009454A8 /* RecordBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordBoard.swift; sourceTree = "<group>"; };
-		A6D45B1B1DAE061E00A8C53A /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A640D2621DAB8485006D17B6 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		A640D2641DAB99F0006D17B6 /* BlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		A6AEEC67236B1087007E2164 /* Puzzle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Puzzle.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,19 +59,15 @@
 		A640D24F1DAB839D006D17B6 /* Puzzle */ = {
 			isa = PBXGroup;
 			children = (
-				A6AD6A4C1DAD2FBA009454A8 /* UIColor+Palette.swift */,
+				A6AEEC67236B1087007E2164 /* Puzzle.entitlements */,
 				A640D2501DAB839D006D17B6 /* AppDelegate.swift */,
 				A640D2521DAB839D006D17B6 /* ViewController.swift */,
+				A640D2641DAB99F0006D17B6 /* BlockView.swift */,
+				A640D2621DAB8485006D17B6 /* BoardView.swift */,
 				A640D2541DAB839E006D17B6 /* Main.storyboard */,
-				A640D2571DAB839E006D17B6 /* Assets.xcassets */,
 				A640D2591DAB839E006D17B6 /* LaunchScreen.storyboard */,
+				A640D2571DAB839E006D17B6 /* Assets.xcassets */,
 				A640D25C1DAB839E006D17B6 /* Info.plist */,
-				A640D2621DAB8485006D17B6 /* MainView.swift */,
-				A640D2641DAB99F0006D17B6 /* SquareView.swift */,
-				A640D2661DAC7FB7006D17B6 /* SquareView+LRUD.swift */,
-				A60BCEA51DAD11E600B318AB /* SquareView+Flip.swift */,
-				A6AD6A4E1DADB8E8009454A8 /* RecordBoard.swift */,
-				A6D45B1B1DAE061E00A8C53A /* InfoViewController.swift */,
 			);
 			path = Puzzle;
 			sourceTree = "<group>";
@@ -112,19 +99,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = iMpression;
 				TargetAttributes = {
 					A640D24C1DAB8399006D17B6 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = TJTGFT2ACN;
+						DevelopmentTeam = DUDTP565G4;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = A640D2481DAB8399006D17B6 /* Build configuration list for PBXProject "Puzzle" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -158,15 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6AD6A4D1DAD2FBA009454A8 /* UIColor+Palette.swift in Sources */,
 				A640D2531DAB839D006D17B6 /* ViewController.swift in Sources */,
-				A640D2631DAB8485006D17B6 /* MainView.swift in Sources */,
-				A6AD6A4F1DADB8E8009454A8 /* RecordBoard.swift in Sources */,
-				A6D45B1C1DAE061F00A8C53A /* InfoViewController.swift in Sources */,
-				A60BCEA61DAD11E700B318AB /* SquareView+Flip.swift in Sources */,
+				A640D2631DAB8485006D17B6 /* BoardView.swift in Sources */,
 				A640D2511DAB839D006D17B6 /* AppDelegate.swift in Sources */,
-				A640D2671DAC7FB7006D17B6 /* SquareView+LRUD.swift in Sources */,
-				A640D2651DAB99F0006D17B6 /* SquareView.swift in Sources */,
+				A640D2651DAB99F0006D17B6 /* BlockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,15 +183,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,7 +223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,15 +241,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -275,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -287,12 +287,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TJTGFT2ACN;
+				CODE_SIGN_ENTITLEMENTS = Puzzle/Puzzle.entitlements;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = DUDTP565G4;
 				INFOPLIST_FILE = Puzzle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.mkdir.Puzzle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkdir.Puzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -300,12 +304,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TJTGFT2ACN;
+				CODE_SIGN_ENTITLEMENTS = Puzzle/Puzzle.entitlements;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = DUDTP565G4;
 				INFOPLIST_FILE = Puzzle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.mkdir.Puzzle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkdir.Puzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
