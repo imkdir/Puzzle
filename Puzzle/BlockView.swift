@@ -8,8 +8,6 @@
 
 import UIKit
 
-let squareSize:CGFloat = 60.0
-
 @IBDesignable
 final class BlockView: UIView {
     
@@ -59,3 +57,5 @@ extension BlockView {
         return cardViews.first(where: { $0.frame.contains(target) })
     }
 }
+
+private let squareSize:CGFloat = 60.0

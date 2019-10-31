@@ -11,12 +11,11 @@ import UIKit
 final class ViewController: UIViewController {
     @IBOutlet weak var boardView: BoardView!
     @IBOutlet weak var spaceView: BlockView!
-    @IBOutlet var buttons: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        position = cardViews
+        originalPositions = cardViews
             .sorted(by: { $0.tag < $1.tag })
             .map({ $0.center })
     }
@@ -24,23 +23,23 @@ final class ViewController: UIViewController {
     //MARK: - IBAction
     
     @IBAction func move(_ sender: UIButton) {
-        let direction = BlockView.Direction(rawValue:sender.tag)!
-        self.spaceView.move(toward: direction, withDuration: duration, options: [])
+        guard let direction = BlockView.Direction(rawValue:sender.tag) else { return }
+        spaceView.move(toward: direction, withDuration: duration, options: [])
     }
     
-    @IBAction func refreshGame(_ sender: UIBarButtonItem) {
+    @IBAction func reset() {
         UIView.animate(withDuration: duration, animations: {
-            self.refreshMainView()
+            self.resetBlocksPosition()
         })
     }
     
-    private func refreshMainView() {
-        cardViews.forEach({ $0.center = self.position[$0.tag-1000] })
+    private func resetBlocksPosition() {
+        cardViews.forEach({ $0.center = self.originalPositions[$0.tag-1000] })
     }
     
     private let duration:TimeInterval = 0.25
+    private var originalPositions: [CGPoint] = []
     private var cardViews: [BlockView] {
-        return boardView.subviews as! [BlockView]
+        return boardView.subviews.compactMap({ $0 as? BlockView })
     }
-    private var position: [CGPoint] = []
 }

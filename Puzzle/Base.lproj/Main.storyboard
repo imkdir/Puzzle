@@ -248,6 +248,7 @@
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="256" id="gDR-fw-Sei"/>
                                             <constraint firstAttribute="trailing" secondItem="QBM-wi-ze2" secondAttribute="trailing" id="gho-bp-TwU"/>
                                             <constraint firstItem="5g3-8E-osY" firstAttribute="centerY" secondItem="g9t-BB-FCA" secondAttribute="centerY" id="hT0-k0-iNn"/>
+                                            <constraint firstItem="5g3-8E-osY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TA5-h6-N2W" secondAttribute="trailing" id="hV7-ge-IUB"/>
                                             <constraint firstItem="LET-no-1sp" firstAttribute="top" secondItem="g9t-BB-FCA" secondAttribute="top" constant="8" id="nfK-tt-0bc"/>
                                             <constraint firstItem="TA5-h6-N2W" firstAttribute="leading" secondItem="g9t-BB-FCA" secondAttribute="leading" constant="8" id="rDh-SO-Eeh"/>
                                             <constraint firstItem="QBM-wi-ze2" firstAttribute="top" secondItem="g9t-BB-FCA" secondAttribute="top" id="rtH-pW-d5r"/>
@@ -270,7 +271,7 @@
                     <navigationItem key="navigationItem" title="Puzzle" id="GC4-3T-Vi6">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="4XF-mY-O8y">
                             <connections>
-                                <action selector="refreshGame:" destination="BYZ-38-t0r" id="yfE-eP-OrV"/>
+                                <action selector="reset" destination="BYZ-38-t0r" id="z2i-Fl-egP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

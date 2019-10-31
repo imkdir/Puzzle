@@ -1,23 +1,14 @@
-#PuzzleGame
-##Dive in Swift 3.0 and Xcode 8.0
-![appIcon](./img/appIcon.png)
+# PuzzleGame
 
-####10 Oct. 2016
+## Something I learned during refactoring
 
-I have no idea where it's going, let it be fun.
++ Upgrading from swift 2 to 5 for such a small code base only need less than a mintue.
++ Refactoring reduce a lot of code, code become more simple.
++ Without any 3rd framework dependencies, from iOS to Catalyst just two checkbox away.
++ Avoid signing cgColor to layer properties, they don't support dark mode at all.
++ If you go with Storyboard, Embed in View is your friend, it makes layout dead simple.
++ Even in Storyboard, watch out for violating DRY principle. Even there's many copy of @IBDesignable views, most of them have same appearance, move the appearance logic into source code.
++ Global constant (let alone variable!) is bad, you can do better.
++ Every crash on force unwrap nil, is an opportunity to change return type to Optional and apply guard against it assignment.
 
-![Screenshot](./img/take-1.png)
-
-####11 Oct. 2016
-
-Good morning! I just add some code to it, now you can move them in four direction.
-
-What I learned is some recap from highschool math, find tag of the adjacent view, in a matrix liked context. And a concept reinforced which is a view's center and frame property is defined in it's _neareast_ superView coordinate system. Also, what Apple says in their documents that view's position may be different in `viewDidLoad` and `viewDidLayoutSubview` is true!
-
-![Screenshot](./img/take-2.gif)
-
-####12 Oct.2016
-
-It's been a day. I have taken many small steps forward with the app. One picture is better than one thousands word, here is a screenshot.
-
-![Screenshot](./img/take-3.gif)
+I created this project in October 10, 2016, while I was looking for a job, after three days I got my first job, so this project has a special meaning to me.
