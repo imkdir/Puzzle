@@ -12,3 +12,4 @@
 + Every crash on force unwrapped nil is an opportunity to change the function's return type to Optional and apply guard against its assignment.
 
 I created this project in October 10, 2016, while I was looking for a job, three days later I got my first job, thus this project always has a special meaning to me.
+
